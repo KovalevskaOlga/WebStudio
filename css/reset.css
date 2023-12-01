@@ -6,8 +6,10 @@ a,
 article {
   margin: 0;
   text-decoration: none;
+  padding: none;
 }
 ul {
   list-style: none;
   text-decoration: none;
+  margin: 0;
 }
