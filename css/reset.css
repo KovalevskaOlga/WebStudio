@@ -1,0 +1,13 @@
+h1,
+h2,
+h3,
+p,
+a,
+article {
+  margin: 0;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  text-decoration: none;
+}
