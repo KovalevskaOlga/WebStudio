@@ -1,15 +1,13 @@
 h1,
 h2,
 h3,
-p,
-article {
+p {
   margin: 0;
 }
 ul {
   list-style: none;
-  text-decoration: none;
   margin: 0;
-  padding: none;
+  padding: 0;
 }
 a {
   text-decoration: none;
