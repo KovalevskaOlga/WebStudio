@@ -160,6 +160,7 @@ body {
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 .team-title {
   color: #212121;
@@ -175,7 +176,7 @@ body {
   justify-content: space-between;
 }
 .team-item {
-  background-color: var(--bg-color);
+  background-color: #fff;
   width: 270px;
   height: 368px;
   text-align: center;
@@ -204,11 +205,9 @@ body {
 }
 /* footer */
 .footer {
-  width: 1600px;
-  height: 252px;
   background: #2f303a;
   padding-top: 60px;
-  padding-bottom: 60px;
+  height: 252px;
 }
 .footer-span {
   color: #2196f3;
@@ -236,6 +235,7 @@ body {
   letter-spacing: 0.42px;
   width: 231px;
   height: 21px;
+  margin-top: 20px;
 }
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
@@ -247,7 +247,11 @@ body {
   width: 231px;
   height: 21px;
   margin-top: 9px;
+  display: block;
 }
 .footer-link:hover {
   color: #2196f3;
+}
+.footer-link:last-child {
+  margin-bottom: 60px;
 }
