@@ -253,6 +253,3 @@ body {
 .footer-link:hover {
   color: #2196f3;
 }
-.footer-link:last-child {
-  margin-bottom: 60px;
-}
