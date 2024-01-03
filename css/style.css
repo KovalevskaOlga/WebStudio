@@ -143,6 +143,9 @@ body {
   letter-spacing: 0.42px;
 }
 /* do */
+.do-section {
+  padding-bottom: 30px;
+}
 .do-title {
   color: #212121;
   text-align: center;
@@ -208,7 +211,7 @@ body {
 .footer {
   background: #2f303a;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 .footer-span {
   color: #2196f3;
