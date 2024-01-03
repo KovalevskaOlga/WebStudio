@@ -23,7 +23,7 @@ body {
   border: 1px solid #ececec;
 }
 .header-logo {
-  color: #000;
+  color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -32,7 +32,7 @@ body {
   margin-right: 93px;
 }
 .header-span {
-  color: #2196f3;
+  color: #000;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -128,7 +128,7 @@ body {
   border: 1px solid #eee;
   background-color: #fff;
   width: 370px;
-  height: 404px;
+  padding-bottom: 20px;
 }
 .all-img {
   margin-bottom: 20px;
@@ -153,7 +153,7 @@ body {
 .footer {
   background: #2f303a;
   padding-top: 60px;
-  /* height: 252px; */
+  padding-bottom: 30px;
 }
 .footer-span {
   color: #2196f3;
