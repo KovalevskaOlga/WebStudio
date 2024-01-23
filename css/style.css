@@ -9,7 +9,7 @@ body {
   font-family: Roboto;
 }
 .container {
-  outline: solid red;
+  /* outline: solid red; */
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -84,7 +84,7 @@ body {
 }
 /* hero */
 .hero {
-  background-color: #212121;
+  background-image: url(../images/bg-hero.png);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -204,6 +204,8 @@ body {
   width: 270px;
   text-align: center;
   padding-bottom: 30px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .team-img {
   width: 270px;
