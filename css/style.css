@@ -68,6 +68,9 @@ body {
   display: flex;
   align-items: center;
 }
+.header-item:hover {
+  fill: #2196f3;
+}
 .header-mail {
   color: #757575;
   font-size: 14px;
@@ -199,6 +202,17 @@ body {
   justify-content: space-between;
   padding-bottom: 94px;
 }
+.do-descr{
+  color: #FFF;
+text-align: center;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
 /* team */
 .team-section {
   padding-top: 94px;
@@ -259,9 +273,6 @@ body {
   margin-right: 34px;
   margin-top: 28px;
 }
-.icon-contact:hover {
-  fill: #fff;
-}
 /* clients */
 .clients {
   padding-top: 94px;
@@ -277,17 +288,31 @@ body {
   margin-bottom: 50px;
 }
 .clients-icon {
-  fill: #757575;
+  fill: #afb1b8;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   width: 170px;
   height: 92px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .clients-list {
   display: flex;
   gap: 30px;
   justify-content: center;
 }
+.clients-item:hover > .clients-icon {
+  fill: #2196f3;
+}
+.clients-item:hover {
+  border: 1px solid #2196f3;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;s
+}
+
 /* footer */
 .footer {
   background: #2f303a;
@@ -336,4 +361,57 @@ body {
 }
 .footer-link:hover {
   color: #2196f3;
+}
+.footer-list {
+  display: flex;
+  gap: 34px;
+}
+.join-title {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.footer-cont{
+  display: flex;
+  gap: 70px;
+}
+.join-title{
+  margin-bottom: 20px;
+}
+.icon-instagram {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.icon-twitter {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.icon-facebook {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.icon-linkedin {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.footer-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-item:hover {
+  background-color: #2196f3;
 }
