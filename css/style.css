@@ -78,6 +78,7 @@ body {
   letter-spacing: 0.28px;
 }
 .icon-email {
+  color: #757575;
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -89,6 +90,7 @@ body {
   letter-spacing: 0.28px;
 }
 .icon-phone {
+  color: #757575;
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -211,7 +213,24 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 }
-
+.do-work > .do-descr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 4px;
+  background: rgba(47, 48, 58, 0.8);
+  color: #eee;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.do-work{
+  position: relative;
+}
 /* team */
 .team-section {
   padding-top: 94px;
@@ -363,7 +382,7 @@ text-transform: uppercase;
 }
 .footer-list {
   display: flex;
-  gap: 34px;
+  gap: 10px;
 }
 .join-title {
   color: #fff;
