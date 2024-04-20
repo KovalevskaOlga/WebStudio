@@ -59,6 +59,22 @@ body {
 .header-link:hover {
   color: #2196f3;
 }
+.header-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50px;
+  width: 48px;
+  height: 4px;
+  opacity: 0;
+  margin-top: 28px;
+  justify-content: center;
+  background-color: #2196f3;
+}
+
+.header-item:hover>.header-link::after {
+  opacity: 1;
+}
 /* contact */
 .header-contacts {
   display: flex;
@@ -401,22 +417,7 @@ text-transform: uppercase;
 .join-title{
   margin-bottom: 20px;
 }
-.icon-instagram {
-  width: 20px;
-  height: 20px;
-  fill: #fff;
-}
-.icon-twitter {
-  width: 20px;
-  height: 20px;
-  fill: #fff;
-}
-.icon-facebook {
-  width: 20px;
-  height: 20px;
-  fill: #fff;
-}
-.icon-linkedin {
+.icon {
   width: 20px;
   height: 20px;
   fill: #fff;
