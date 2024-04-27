@@ -29,7 +29,7 @@
         <nav class="header-navigation">
           <ul class="header-list">
             <li class="header-item">
-              <a class="header-link" href="./index.html">Studio</a>
+              <a class="header-link header-line" href="./index.html">Studio</a>
             </li>
             <li class="header-item">
               <a class="header-link" href="./portfolio.html">Portfolio</a>
@@ -428,7 +428,7 @@
           <li class="modal-item">
             <label for="phone" class="modal-name"
               >Телефон
-              <input id="phone" type="tel" class="modal-input" />
+              <input required id="phone" type="tel" class="modal-input" />
               <svg class="modal-icons" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-phoneblack"></use>
               </svg>
@@ -437,7 +437,7 @@
           <li class="modal-item">
             <label for="email" class="modal-name"
               >Пошта
-              <input id="email" type="email" class="modal-input" />
+              <input required id="email" type="email" class="modal-input" />
               <svg class="modal-icons" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-emailblack"></use>
               </svg>
@@ -463,7 +463,7 @@
             <a href="#" class="modal-link">Умови договору</a>
           </p>
         </label>
-        <button class="modal-button" type="submit" data-modal-close>
+        <button type="submit" class="modal-button" data-modal-close>
           Відправити
         </button>
       </div>
