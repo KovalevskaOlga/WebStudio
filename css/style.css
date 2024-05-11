@@ -30,6 +30,16 @@ body {
   line-height: 1.38;
   letter-spacing: 0.78px;
   margin-right: 93px;
+  animation-name: run-title;
+  animation-duration: 2s;
+}
+@keyframes run-title {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 .header-span {
   color: #000;
