@@ -1,0 +1,25 @@
+body {
+  font-family: Roboto;
+}
+.container {
+  /* outline: solid red; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-list {
+  --grid-gap: 30px;
+}
+.header-item {
+  --cards: 3;
+}
+.grid-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--grid-gap);
+}
+.grid-item {
+  width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards));
+}
