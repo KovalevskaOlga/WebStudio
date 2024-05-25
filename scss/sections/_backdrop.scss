@@ -15,13 +15,13 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) opacity;
 }
 
-.modal-box {
+&__box {
   border-radius: 4px;
   background: $title-color;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
-.modal-title {
+&__title {
   color: $text-color;
   text-align: center;
   font-size: 20px;
@@ -32,7 +32,7 @@
   margin-bottom: 12px;
 }
 
-.modal-window {
+&__window {
   border-radius: 4px;
   background: $title-color;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
@@ -46,12 +46,12 @@
   height: 581px;
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1) transform;
 }
-.backdrop.is-hidden .modal-window {
+.backdrop.is-hidden &__window {
   transform: translate(0);
   transform: rotate(0);
 }
 
-.modal-close-button {
+&__button {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -65,18 +65,18 @@
   top: 8px;
   right: 8px;
 }
-.modal-close-button:hover,
-.modal-close-button:focus {
+&__button:hover,
+&__button:focus {
   fill: $text-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-list {
+&__list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
 }
-.modal-name {
+&__name {
   color: $text-color;
   font-size: 12px;
   font-style: normal;
@@ -88,19 +88,19 @@
   flex-direction: column;
   gap: 4px;
 }
-.modal-input:focus {
+&__input:focus {
   outline: none;
   border: 1px solid $logo-color;
 }
-.modal-comment:focus {
+&__comment:focus {
   outline: none;
   border: 1px solid $logo-color;
 }
-.modal-icons:focus {
+&__icons:focus {
   fill: $logo-color;
 }
 
-.modal-input {
+&__input {
   width: 448px;
   height: 40px;
   border-radius: 4px;
@@ -108,13 +108,13 @@
   padding-left: 35px;
 }
 
-.modal-icons {
+&__icons {
   position: absolute;
   top: 29px;
   left: 12px;
 }
 
-.modal-comment {
+&__comment {
   width: 448px;
   height: 120px;
   border-radius: 4px;
@@ -128,7 +128,7 @@
   resize: none;
 }
 
-.modal-coment::placeholder {
+&__coment::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   font-weight: 400;
@@ -136,14 +136,14 @@
   letter-spacing: 0.12px;
 }
 
-.modal-label {
+&__label {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
 }
 
-.modal-text {
+&__text {
   color: $text-color;
   font-size: 14px;
   font-weight: 400;
@@ -151,11 +151,11 @@
   letter-spacing: 0.42px;
 }
 
-.modal-link {
+&__link {
   color: $logo-color;
 }
 
-.modal-button {
+&__button {
   color: $title-color;
   font-size: 16px;
   font-weight: 700;

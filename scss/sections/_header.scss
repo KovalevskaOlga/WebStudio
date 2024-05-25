@@ -1,121 +1,122 @@
 .header {
   padding-top: 23px;
   padding-bottom: 24px;
-  border: 1px solid $title-color;
-}
-.header-logo {
-  color: $logo-color;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.78px;
-  margin-right: 93px;
-  animation-name: run-title;
-  animation-duration: 2s;
-}
-.header-span {
-  color: $text-color;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.78px;
-}
-.header-box {
-  display: flex;
-  align-items: center;
-}
-.header-navigation {
-  margin-right: 318px;
-}
-.header-list {
-  display: flex;
-  gap: 50px;
-}
-.header-link {
-  color: $text-color;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-  position: relative;
-}
-.header-link:hover {
-  color: $logo-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 50px;
-  width: 100%;
-  height: 4px;
-  opacity: 0;
-  margin-top: 28px;
-  justify-content: center;
-  background-color: $logo-color;
+
+  &__logo {
+    color: $logo-color;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+    animation-name: run-title;
+    animation-duration: 2s;
+  }
+  &__span {
+    color: $text-color;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+  &__navigation {
+    margin-right: 318px;
+  }
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+  &__link {
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    position: relative;
+  }
+  &__link:hover {
+    color: $logo-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    margin-top: 28px;
+    justify-content: center;
+    background-color: $logo-color;
+  }
+
+  &__item:hover > &__link::after {
+    opacity: 1;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    width: 100%;
+    height: 4px;
+    opacity: 1;
+    margin-top: 28px;
+  }
+  &__line {
+    color: $logo-color;
+  }
+  &__contacts {
+    display: flex;
+    gap: 50px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__item:hover {
+    fill: $logo-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__mail {
+    color: $paragraphs-color;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+  }
+  &__email {
+    color: $paragraphs-color;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  &__phone {
+    color: $paragraphs-color;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+  }
+  &__phone {
+    color: $paragraphs-color;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  &__mail:hover {
+    color: $logo-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__phone:hover {
+    color: $logo-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.header-item:hover > .header-link::after {
-  opacity: 1;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 50px;
-  width: 100%;
-  height: 4px;
-  opacity: 1;
-  margin-top: 28px;
-}
-.header-line {
-  color: $logo-color;
-}
 /* contact */
-.header-contacts {
-  display: flex;
-  gap: 50px;
-}
-.header-item {
-  display: flex;
-  align-items: center;
-}
-.header-item:hover {
-  fill: $logo-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-mail {
-  color: $paragraphs-color;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-}
-.icon-email {
-  color: $paragraphs-color;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-.header-phone {
-  color: $paragraphs-color;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-}
-.icon-phone {
-  color: $paragraphs-color;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-}
-.header-mail:hover {
-  color: $logo-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-phone:hover {
-  color: $logo-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
