@@ -27,7 +27,7 @@
   margin-bottom: 30px;
 }
 .features-caption {
-  color: #212121;
+  color: $text-color;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -37,7 +37,7 @@
   margin-bottom: 10px;
 }
 .features-text {
-  color: #757575;
+  color: $paragraphs-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;

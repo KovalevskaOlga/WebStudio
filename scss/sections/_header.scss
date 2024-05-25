@@ -1,10 +1,10 @@
 .header {
   padding-top: 23px;
   padding-bottom: 24px;
-  border: 1px solid #ececec;
+  border: 1px solid $title-color;
 }
 .header-logo {
-  color: #2196f3;
+  color: $logo-color;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -15,7 +15,7 @@
   animation-duration: 2s;
 }
 .header-span {
-  color: #000;
+  color: $text-color;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -34,14 +34,14 @@
   gap: 50px;
 }
 .header-link {
-  color: #212121;
+  color: $text-color;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
   position: relative;
 }
 .header-link:hover {
-  color: #2196f3;
+  color: $logo-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link::after {
@@ -54,7 +54,7 @@
   opacity: 0;
   margin-top: 28px;
   justify-content: center;
-  background-color: #2196f3;
+  background-color: $logo-color;
 }
 
 .header-item:hover > .header-link::after {
@@ -72,7 +72,7 @@
   margin-top: 28px;
 }
 .header-line {
-  color: #2196f3;
+  color: $logo-color;
 }
 /* contact */
 .header-contacts {
@@ -84,38 +84,38 @@
   align-items: center;
 }
 .header-item:hover {
-  fill: #2196f3;
+  fill: $logo-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail {
-  color: #757575;
+  color: $paragraphs-color;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 .icon-email {
-  color: #757575;
+  color: $paragraphs-color;
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 .header-phone {
-  color: #757575;
+  color: $paragraphs-color;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
 }
 .icon-phone {
-  color: #757575;
+  color: $paragraphs-color;
   width: 10px;
   height: 16px;
   margin-right: 10px;
 }
 .header-mail:hover {
-  color: #2196f3;
+  color: $logo-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-phone:hover {
-  color: #2196f3;
+  color: $logo-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

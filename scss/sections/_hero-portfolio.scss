@@ -9,8 +9,8 @@
 }
 
 .hero-button {
-  color: #212121;
-  background-color: #f5f4fa;
+  color: $text-color;
+  background-color: $title-color;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -22,8 +22,8 @@
   border: none;
 }
 .hero-button:hover {
-  background: #2196f3;
-  color: #fff;
+  background: $logo-color;
+  color: $title-color;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

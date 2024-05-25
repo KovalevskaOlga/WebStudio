@@ -1,10 +1,10 @@
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #f5f4fa;
+  background-color: $title-color;
 }
 .team-title {
-  color: #212121;
+  color: $text-color;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 .team-item {
-  background-color: #fff;
+  background-color: $title-color;
   width: 270px;
   text-align: center;
   padding-bottom: 30px;
@@ -30,7 +30,7 @@
   margin-bottom: 30px;
 }
 .team-name {
-  color: #212121;
+  color: $text-color;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -39,7 +39,7 @@
   margin-bottom: 10px;
 }
 .team-paragraph {
-  color: #757575;
+  color: $paragraphs-color;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -53,7 +53,7 @@
 .icon-contact {
   width: 20px;
   height: 20px;
-  fill: #757575;
+  fill: $paragraphs-color;
   margin-right: 34px;
   margin-top: 28px;
 }
