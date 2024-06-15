@@ -40,10 +40,9 @@
   &__descr {
     color: $bg-color;
     text-align: center;
-    font-size: 14px;
+    @extend %text;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.42px;
     text-transform: uppercase;
   }
 }

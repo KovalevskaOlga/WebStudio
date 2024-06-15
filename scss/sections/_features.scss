@@ -33,10 +33,9 @@
 
   &__caption {
     color: $text-color;
-    font-size: 14px;
+    @extend %text;
     font-weight: 700;
     line-height: 1.14;
-    letter-spacing: 0.42px;
     text-transform: uppercase;
     width: 270px;
     margin-bottom: 10px;
@@ -44,9 +43,8 @@
 
   &__text {
     color: $paragraphs-color;
-    font-size: 14px;
+    @extend %text;
     font-weight: 400;
     line-height: 1.71;
-    letter-spacing: 0.42px;
   }
 }

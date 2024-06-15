@@ -1,3 +1,16 @@
+.footer__subtitle, .footer__link, .footer__address, .do__descr, .features__text, .features__caption, .window__text {
+  font-size: 14px;
+  letter-spacing: 0.42px;
+}
+
+.hero__button {
+  background: #2196f3;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+
 .container {
   width: 1230px;
   padding-left: 15px;
@@ -70,11 +83,13 @@ button {
 }
 .header__item:hover > .header-link::after {
   opacity: 1;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__item:hover {
   fill: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__line {
   color: #2196f3;
@@ -98,7 +113,8 @@ button {
 }
 .header__link:hover {
   color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link::after {
   content: "";
@@ -130,7 +146,8 @@ button {
 }
 .header__mail:hover {
   color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__phone {
   color: #757575;
@@ -146,7 +163,8 @@ button {
 }
 .header__number:hover {
   color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes run-title {
@@ -176,19 +194,14 @@ button {
   letter-spacing: 2.64px;
 }
 .hero__button {
-  color: #ffffff;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 216px;
   height: 50px;
-  font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.96px;
-  border: none;
-  border-radius: 4px;
-  background: #2196f3;
 }
 
 .backdrop {
@@ -241,7 +254,8 @@ button {
 }
 .window__close:hover, .window__close:focus {
   fill: var(--whathbtbg);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .window__title {
   color: var(--feauturesmain);
@@ -329,10 +343,8 @@ button {
 }
 .window__text {
   color: var(--feauturesmain);
-  font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.42px;
 }
 .window__link {
   color: #2196f3;
@@ -383,20 +395,16 @@ button {
 }
 .features__caption {
   color: #212121;
-  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
   width: 270px;
   margin-bottom: 10px;
 }
 .features__text {
   color: #757575;
-  font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.42px;
 }
 
 .do {
@@ -437,10 +445,8 @@ button {
 .do__descr {
   color: #ffffff;
   text-align: center;
-  font-size: 14px;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
 }
 
@@ -523,14 +529,16 @@ button {
 }
 .clients__item:hover > .clients__icon {
   fill: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__item:hover {
   border: 1px solid #2196f3;
   width: 170px;
   height: 92px;
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__icon {
   fill: #afb1b8;
@@ -572,22 +580,18 @@ button {
 }
 .footer__address {
   color: #ffffff;
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.42px;
   width: 231px;
   height: 21px;
   margin-top: 20px;
 }
 .footer__link {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.42px;
   width: 231px;
   height: 21px;
   margin-top: 9px;
@@ -595,15 +599,14 @@ button {
 }
 .footer__link:hover {
   color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__subtitle {
   color: #ffffff;
-  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
   padding-top: 10px;
   margin-bottom: 20px;
@@ -623,7 +626,8 @@ button {
 }
 .footer__item:hover {
   background-color: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__icon {
   width: 20px;
