@@ -1,7 +1,7 @@
-.team__section {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: $title-color;
+  background-color: $bg-color;
 
   &__title {
     color: $text-color;
@@ -12,23 +12,27 @@
     letter-spacing: 1.08px;
     margin-bottom: 50px;
   }
+
   &__list {
     display: flex;
     justify-content: space-between;
   }
+
   &__item {
-    background-color: $title-color;
+    background-color: $bg-color;
     width: 270px;
     text-align: center;
     padding-bottom: 30px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
+
   &__img {
     width: 270px;
     height: 260px;
     margin-bottom: 30px;
   }
+
   &__name {
     color: $text-color;
     text-align: center;
@@ -38,6 +42,7 @@
     letter-spacing: 0.48px;
     margin-bottom: 10px;
   }
+
   &__paragraph {
     color: $paragraphs-color;
     text-align: center;
@@ -46,10 +51,12 @@
     line-height: 1.18;
     letter-spacing: 0.48px;
   }
-  &__list {
+
+  &__list2 {
     display: flex;
     justify-content: center;
   }
+
   &__contact {
     width: 20px;
     height: 20px;

@@ -1,7 +1,8 @@
+@import "./base/commont";
 @import "./base/reset";
-@import "./base/common";
-@import "./sections/header";
+@import "./utils/vars";
+@import "./components/header";
 @import "./utils/animations";
 @import "./sections/hero-portfolio";
 @import "./sections/all-portfolio";
-@import "./sections/footer";
+@import "./components/footer";

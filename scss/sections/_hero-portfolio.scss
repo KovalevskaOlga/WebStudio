@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
   padding-top: 94px;
   padding-bottom: 50px;
 
@@ -20,18 +20,17 @@
     height: 38px;
     border-radius: 4px;
     border: none;
-  }
-  &__button:hover {
-    background: $logo-color;
-    color: $title-color;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
-      0 3px 1px 0 rgba(0, 0, 0, 0.1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__button {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+
+    &:hover {
+      background: $logo-colour;
+      color: $bg-color;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+        0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }

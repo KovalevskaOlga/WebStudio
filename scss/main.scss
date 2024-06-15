@@ -1,12 +1,12 @@
-@import "./utils/vars";
+@import "./base/commont";
 @import "./base/reset";
-@import "./base/common";
-@import "./sections/header";
+@import "./utils/vars";
+@import "./components/header";
 @import "./utils/animations";
 @import "./sections/hero";
+@import "./components/modal";
 @import "./sections/features";
 @import "./sections/do";
 @import "./sections/team";
 @import "./sections/clients";
-@import "./sections/footer";
-@import "./sections/backdrop";
+@import "./components/footer";

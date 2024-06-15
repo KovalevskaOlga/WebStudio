@@ -17,9 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/portfolio-style.css" /> -->
-    <link rel="stylesheet" href="./scss/portfolio.css" />
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
     <header class="header">
@@ -28,23 +27,23 @@
           >Web<span class="header__span">Studio</span></a
         >
         <nav class="header__navigation">
-          <ul class="header__list grid__list">
-            <li class="header__item grid__item">
-              <a class="header__link" href="./index.html">Studio</a>
-            </li>
-            <li class="header__item grid__item">
-              <a class="header__link header__line" href="./portfolio.html"
-                >Portfolio</a
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link header__line" href="./index.html"
+                >Studio</a
               >
             </li>
-            <li class="header__item grid__item">
+            <li class="header__item">
+              <a class="header__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header__item">
               <a class="header__link" href="./contact.html">Contacts</a>
             </li>
           </ul>
         </nav>
         <ul class="header__contacts">
           <li class="header__item">
-            <svg class="icon__email">
+            <svg class="header__email">
               <use href="./images/symbol-defs.svg#icon-email"></use>
             </svg>
             <a class="header__mail" href="mailto:info@devstudio.com"
@@ -52,10 +51,10 @@
             >
           </li>
           <li class="header__item">
-            <svg class="icon__phone">
+            <svg class="header__phone">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
-            <a class="header__phone" href="tel:+380961111111"
+            <a class="header__number" href="tel:+380961111111"
               >+38 096 11 11 111</a
             >
           </li>
@@ -64,7 +63,7 @@
     </header>
     <main>
       <!-- hero section -->
-      <section class="hero__section">
+      <section class="hero">
         <div class="container">
           <nav class="hero__navigation">
             <ul class="hero__list">
@@ -88,9 +87,9 @@
         </div>
       </section>
       <!-- all -->
-      <section class="all__section">
+      <section class="all">
         <div class="container">
-          <ul class="all__list grid__list">
+          <ul class="all__list grid">
             <li class="all__item grid__item">
               <div class="overlay__box">
                 <img
@@ -269,60 +268,62 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-cont">
-          <div class="footer-info">
-            <a class="footer-logo" href="./index.html"
-              ><span class="footer-span">Web</span>Studio</a
+        <div class="footer__cont">
+          <div class="footer__info">
+            <a class="footer__logo" href="./index.html"
+              ><span class="footer__span">Web</span>Studio</a
             >
-            <address class="footer-address">Kyiv, 26 Lesi Ukrainky Ave</address>
+            <address class="footer__address">
+              Kyiv, 26 Lesi Ukrainky Ave
+            </address>
             <a
-              class="footer-link"
+              class="footer__link"
               href="mailto:info@devstudio.com"
               target="_blank"
               >info@devstudio.com</a
             >
-            <a class="footer-link" href="tel:+380961111111"
+            <a class="footer__link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </div>
-          <div class="join">
-            <h4 class="join-title">Join in</h4>
-            <ul class="footer-list">
-              <li class="footer-item">
-                <svg class="icon">
+          <div class="footer__join">
+            <h4 class="footer__subtitle">Join in</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </li>
-              <li class="footer-item">
-                <svg class="icon">
+              <li class="footer__item">
+                <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </li>
-              <li class="footer-item">
-                <svg class="icon">
+              <li class="footer__item">
+                <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </li>
-              <li class="footer-item">
-                <svg class="icon">
+              <li class="footer__item">
+                <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </li>
             </ul>
           </div>
-          <form action="" class="footer-form">
-            <h2 class="footer-form-title">Subscribe to the newsletter</h2>
-            <div class="footer-form-container">
+          <form action="" class="footer__form">
+            <h2 class="footer__subscribe">Subscribe to the newsletter</h2>
+            <div class="footer__container2">
               <input
                 type="email"
-                class="footer-form-input"
+                class="footer__input"
                 placeholder="E-mail"
                 required
               />
-              <button class="footer-form-button" type="submit">
+              <button class="footer__button" type="submit">
                 Subscribe
                 <svg
-                  class="footer-icon"
+                  class="footer__tg"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
