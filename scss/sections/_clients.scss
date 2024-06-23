@@ -10,12 +10,26 @@
     line-height: normal;
     letter-spacing: 1.08px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.84px;
+    }
   }
 
   &__list {
     display: flex;
     gap: 30px;
     justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   &__item:hover > &__icon {

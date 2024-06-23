@@ -5,30 +5,94 @@
   &__list {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   &__item:nth-child(1)::before {
     content: url("../images/antenna.webp");
-    display: block;
+    background-color: #f5f4ff;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__item:nth-child(2)::before {
     content: url("../images/clock.webp");
-    display: block;
+    background-color: #f5f4ff;
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__item:nth-child(3)::before {
     content: url("../images/laptop.webp");
-    display: block;
+    background-color: #f5f4ff;
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__item:nth-child(4)::before {
     content: url("../images/space.webp");
-    display: block;
+    background-color: #f5f4ff;
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__caption {
@@ -39,6 +103,11 @@
     text-transform: uppercase;
     width: 270px;
     margin-bottom: 10px;
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
   }
 
   &__text {
@@ -46,5 +115,17 @@
     @extend %text;
     font-weight: 400;
     line-height: 1.71;
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }

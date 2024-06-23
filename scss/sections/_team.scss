@@ -15,16 +15,42 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   &__item {
     background-color: $bg-color;
-    width: 270px;
     text-align: center;
     padding-bottom: 30px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+      height: 622px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 536px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 428px;
+    }
   }
 
   &__img {
