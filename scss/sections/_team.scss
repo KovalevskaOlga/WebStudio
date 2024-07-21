@@ -1,7 +1,17 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: $bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $team-color;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 
   &__title {
     color: $text-color;
@@ -38,7 +48,7 @@
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
     @media screen and (max-width: 767px) {
-      width: 450px;
+      max-width: 450px;
     }
 
     @media screen and (min-width: 768px) {
