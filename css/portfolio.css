@@ -273,10 +273,24 @@ button {
   padding-top: 94px;
   padding-bottom: 50px;
 }
+.hero__flex {
+  max-width: 100%;
+}
 .hero__list {
   display: flex;
   gap: 8px;
-  justify-content: center;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .hero__list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__list {
+    justify-content: center;
+  }
 }
 .hero__button {
   color: #212121;
@@ -305,12 +319,20 @@ button {
   padding-bottom: 94px;
 }
 .all__list {
+  display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .all__list {
+    justify-content: start;
+  }
 }
 .all__item {
   border: 1px solid #ffffff;
   background-color: #ffffff;
-  width: 370px;
+  width: 450px;
   padding-bottom: 20px;
 }
 .all__item:hover {
@@ -318,8 +340,15 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.all__img {
-  margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+  .all__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .all__item {
+    width: 370px;
+  }
 }
 .all__subtitle {
   color: #212121;
@@ -328,8 +357,9 @@ button {
   line-height: 2;
   letter-spacing: 1.08px;
   padding-left: 24px;
+  padding-top: 20px;
 }
-.all__text {
+.all__descr {
   color: #757575;
   font-size: 16px;
   font-weight: 400;
@@ -337,14 +367,26 @@ button {
   letter-spacing: 0.48px;
   padding-left: 24px;
 }
-
-.grid {
-  display: flex;
-  justify-content: center;
-  gap: var(--grid-gap);
+.all__box {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #757575;
+  overflow: hidden;
 }
-
-.overlay__text {
+.all__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all__text {
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
@@ -352,40 +394,21 @@ button {
   letter-spacing: 0.54px;
   width: 322px;
 }
-
-.overlay__box {
-  position: relative;
-  width: 370px;
-  height: 294px;
-  margin: 0 auto;
-  background-color: #757575;
-  overflow: hidden;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translatey(100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay__box:hover .overlay {
+.all__box:hover .all__overlay {
   transform: translatey(0);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.overlay p {
+.all__overlay p {
   color: #ffffff;
   padding: 10px;
   margin: 0;
   font-size: 18px;
+}
+.all .grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--grid-gap);
 }
 
 .footer {
