@@ -10,10 +10,11 @@
     @media screen and (max-width: 767px) {
       flex-direction: column;
       gap: 60px;
+      text-align: center;
     }
 
     @media screen and (min-width: 768px) {
-      flex-direction: column;
+      flex-direction: row;
       gap: 60px;
     }
     @media screen and (min-width: 1200px) {
@@ -22,12 +23,29 @@
     }
   }
 
-  &__info {
-    width: 232px;
+  &__desk {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
 
-    @media screen and (max-width: 768px) {
-      margin-right: auto;
-      margin-left: auto;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 76px;
+      width: 232px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+      margin-left: 0;
+      align-items: start;
+      width: 180px;
     }
   }
 
@@ -38,13 +56,16 @@
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-    margin-right: 93px;
     display: block;
     width: 154px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
       margin-right: auto;
       margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
     }
   }
 
@@ -63,7 +84,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
-    width: 207px;
+    max-width: 100%;
     margin-top: 20px;
 
     @media screen and (max-width: 1199px) {
@@ -77,7 +98,7 @@
     @extend %text;
     font-weight: 400;
     line-height: 1.71;
-    width: 134;
+    max-width: 100%;
     margin-top: 9px;
     display: block;
 
@@ -89,17 +110,17 @@
 
   &__subtitle {
     color: $bg-color;
-    font-style: normal;
     font-weight: 700;
     @extend %text;
     text-transform: uppercase;
-    padding-top: 10px;
     margin-bottom: 20px;
-    width: 135px;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       margin-left: auto;
-      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
     }
   }
 
@@ -135,25 +156,33 @@
     fill: $bg-color;
   }
 
+  &__form {
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+    }
+  }
+
   &__subscribe {
     color: $bg-color;
-    color: $pf-bg;
-    @extend %last-connect;
-    font-style: normal;
-    line-height: normal;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width: 1199px) {
-      margin-left: auto;
-      margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      margin-right: 260px;
     }
   }
 
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     flex-shrink: 0;
     border-radius: 4px;
@@ -165,6 +194,11 @@
     font-weight: 400;
     line-height: 20px; /* 125% */
     letter-spacing: 0.48px;
+    padding-left: 16px;
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
 
   &__button {
@@ -180,6 +214,12 @@
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.96px;
     margin-left: 12px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 12px;
+    }
   }
 
   &__tg {
@@ -190,17 +230,32 @@
 
   &__container2 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: flex;
+      padding-left: 79px;
+    }
   }
 
   &__join {
     margin-top: 5px;
 
-    @media screen and (max-width: 767px) {
-      margin-top: 60px;
+    @media screen and (min-width: 768px) {
+      margin-left: 76px;
     }
-    @media screen and (max-width: 1199px) {
-      margin-left: auto;
-      margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }

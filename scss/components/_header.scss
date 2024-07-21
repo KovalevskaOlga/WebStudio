@@ -6,6 +6,7 @@
   &__box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -28,9 +29,14 @@
     animation-name: run-title;
     animation-duration: 2s;
 
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+
     @media screen and (min-width: 1200px) {
       font-size: 26px;
       letter-spacing: 0.78px;
+      margin-right: 93px;
     }
   }
 
@@ -125,16 +131,26 @@
   }
 
   &__contacts {
+    @include text(
+      $size: 14px,
+      $weight: 500,
+      $height: none,
+      $spacing: none,
+      $transform: none
+    );
     display: none;
-    gap: 50px;
 
-    // @media screen and (min-width: 768px) {
-    //   display: block;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //   display: flex;
-    // }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-top: 7px;
+    }
   }
 
   &__email {
@@ -183,6 +199,7 @@
 
   &__btn {
     border: none;
+    background-color: transparent;
 
     @media screen and (min-width: 768px) {
       display: none;
