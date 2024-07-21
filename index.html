@@ -60,7 +60,7 @@
             >
           </li>
         </ul>
-        <button class="header__btn" type="button">
+        <button class="header__btn" data-mobile-open type="button">
           <svg class="header__svg">
             <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -497,6 +497,63 @@
         </div>
       </div>
     </div>
+
+    <div class="mobile">
+      <div class="mobile__backdrop is-hidden" data-mobile>
+        <div class="mobile__window">
+          <button class="mobile__button" type="button" data-mobile-close>
+            <svg class="mobile__icon">
+              <use href="./images/symbol-defs.svg#icon-closeblack"></use>
+            </svg>
+          </button>
+          <ul class="mobile__nav">
+            <li class="mobile__item">
+              <a class="mobile__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <div class="mobile__gap"></div>
+          <ul class="mobile__contacts">
+            <li class="mobile__iteminfo">
+              <a class="mobile__number" href="tel:+380961111111">+380961111111</a>
+            </li>
+            <li class="mobile__iteminfo">
+              <a class="mobile__email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile__social">
+            <li class="mobile__itemsocial">
+              <a class="mobile__sociallink" href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile__itemsocial">
+              <a class="mobile__sociallink" href="https://twitter.com/?lang=uk"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile__itemsocial">
+              <a class="mobile__sociallink" href="https://www.facebook.com/"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile__itemsocial">
+              <a class="mobile__sociallink" href="https://linkedin.com/"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/index.js"></script>
+<script type="module" src="./js/mobile.js"></script>
   </body>
 </html>
