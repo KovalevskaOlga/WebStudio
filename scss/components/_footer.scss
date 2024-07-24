@@ -9,13 +9,13 @@
 
     @media screen and (max-width: 767px) {
       flex-direction: column;
-      gap: 60px;
+      // gap: 60px;
       text-align: center;
     }
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      gap: 60px;
+      // gap: 60px;
     }
     @media screen and (min-width: 1200px) {
       flex-direction: row;
@@ -116,7 +116,8 @@
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
-      margin-left: auto;
+      display: flex;
+      justify-content: center;
     }
 
     @media screen and (min-width: 1200px) {
@@ -157,7 +158,7 @@
   }
 
   &__form {
-    padding-top: 60px;
+    margin-top: 60px;
 
     @media screen and (min-width: 1200px) {
       padding-top: 0;
@@ -217,7 +218,6 @@
     font-weight: 700;
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.96px;
-    margin-left: 12px;
     margin-top: 20px;
 
     @media screen and (min-width: 1200px) {
@@ -255,7 +255,7 @@
     margin-top: 5px;
 
     @media screen and (min-width: 768px) {
-      margin-left: 76px;
+      margin-left: 165px;
     }
     @media screen and (min-width: 1200px) {
       margin-left: 0;

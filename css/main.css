@@ -65,9 +65,15 @@ button {
 }
 
 .header {
-  padding-top: 23px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid #e8e7e7;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 23px;
+    padding-bottom: 24px;
+  }
 }
 .header__box {
   display: flex;
@@ -222,12 +228,19 @@ button {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .header__mail {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header__mail {
+    font-size: 14px;
+  }
 }
 .header__mail:hover {
   color: #2196f3;
@@ -242,9 +255,14 @@ button {
 }
 .header__number {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.28px;
+}
+@media screen and (min-width: 1200px) {
+  .header__number {
+    font-size: 14px;
+  }
 }
 .header__number:hover {
   color: #2196f3;
@@ -283,6 +301,7 @@ button {
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-size: cover;
 }
 @media screen and (min-width: 320px) {
   .hero {
@@ -325,7 +344,7 @@ button {
   margin-left: auto;
   font-family: Roboto;
   margin-right: auto;
-  max-width: 100%;
+  max-width: 360px;
   text-align: center;
   margin-bottom: 30px;
   font-size: 26px;
@@ -689,8 +708,14 @@ button {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .features__list {
   display: flex;
@@ -899,11 +924,17 @@ button {
 .team__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 767px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 .team__list {
   display: flex;
@@ -997,17 +1028,18 @@ button {
 .clients__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 0.84px;
+    margin-bottom: 50px;
   }
 }
 .clients__list {
@@ -1062,14 +1094,12 @@ button {
 @media screen and (max-width: 767px) {
   .footer__cont {
     flex-direction: column;
-    gap: 60px;
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .footer__cont {
     flex-direction: row;
-    gap: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1168,7 +1198,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer__subtitle {
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1207,7 +1238,7 @@ button {
   fill: #ffffff;
 }
 .footer__form {
-  padding-top: 60px;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer__form {
@@ -1268,7 +1299,6 @@ button {
   font-weight: 700;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
-  margin-left: 12px;
   margin-top: 20px;
 }
 @media screen and (min-width: 1200px) {
@@ -1307,7 +1337,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer__join {
-    margin-left: 76px;
+    margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {

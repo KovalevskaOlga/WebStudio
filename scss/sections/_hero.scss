@@ -11,6 +11,7 @@
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-size: cover;
 
   @media screen and (min-width: 320px) {
     background-image: linear-gradient(
@@ -75,7 +76,7 @@
     margin-left: auto;
     font-family: Roboto;
     margin-right: auto;
-    max-width: 100%;
+    max-width: 360px;
     text-align: center;
     margin-bottom: 30px;
     font-size: 26px;

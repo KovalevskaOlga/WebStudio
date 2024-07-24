@@ -59,9 +59,15 @@ button {
 }
 
 .header {
-  padding-top: 23px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid #e8e7e7;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 23px;
+    padding-bottom: 24px;
+  }
 }
 .header__box {
   display: flex;
@@ -216,12 +222,19 @@ button {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .header__mail {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header__mail {
+    font-size: 14px;
+  }
 }
 .header__mail:hover {
   color: #2196f3;
@@ -236,9 +249,14 @@ button {
 }
 .header__number {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.28px;
+}
+@media screen and (min-width: 1200px) {
+  .header__number {
+    font-size: 14px;
+  }
 }
 .header__number:hover {
   color: #2196f3;
@@ -342,6 +360,8 @@ button {
 @media screen and (min-width: 768px) {
   .all__item {
     width: 354px;
+    border: 1px solid #eee;
+    background: #fff;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -543,14 +563,12 @@ button {
 @media screen and (max-width: 767px) {
   .footer__cont {
     flex-direction: column;
-    gap: 60px;
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .footer__cont {
     flex-direction: row;
-    gap: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -649,7 +667,8 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer__subtitle {
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -688,7 +707,7 @@ button {
   fill: #ffffff;
 }
 .footer__form {
-  padding-top: 60px;
+  margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer__form {
@@ -749,7 +768,6 @@ button {
   font-weight: 700;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
-  margin-left: 12px;
   margin-top: 20px;
 }
 @media screen and (min-width: 1200px) {
@@ -788,7 +806,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer__join {
-    margin-left: 76px;
+    margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
