@@ -224,7 +224,7 @@ button {
   }
 }
 .header__email {
-  color: #757575;
+  fill: #757575;
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -248,7 +248,7 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__phone {
-  color: #757575;
+  fill: #757575;
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -358,6 +358,7 @@ button {
     font-size: 44px;
     line-height: 60px;
     letter-spacing: 2.64px;
+    max-width: 696px;
   }
 }
 .hero__button {
@@ -857,7 +858,7 @@ button {
 }
 
 .do {
-  padding-bottom: 30px;
+  padding-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
   .do {
@@ -876,7 +877,6 @@ button {
 .do__list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 .do__work {
   position: relative;
@@ -887,8 +887,8 @@ button {
   justify-content: center;
   position: absolute;
   width: 370px;
-  height: 77px;
-  bottom: 4px;
+  height: 70px;
+  bottom: 0;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
   font-size: 14px;
@@ -1000,13 +1000,27 @@ button {
 .team__list2 {
   display: flex;
   justify-content: center;
-  gap: 34px;
+  gap: 10px;
+  margin-top: 16px;
 }
 .team__contact {
   width: 20px;
   height: 20px;
   fill: #757575;
-  margin-top: 28px;
+}
+.team__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team__link:hover {
+  border-radius: 100%;
+  background-color: #2196f3;
+}
+.team__link:hover > .team__contact {
+  fill: whitesmoke;
 }
 
 .clients {
@@ -1036,7 +1050,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 700;
     letter-spacing: 0.84px;
     margin-bottom: 50px;
@@ -1205,6 +1219,7 @@ button {
 @media screen and (min-width: 1200px) {
   .footer__subtitle {
     margin-left: 0;
+    justify-content: start;
   }
 }
 .footer__list {
@@ -1242,7 +1257,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .footer__form {
-    padding-top: 0;
+    margin-top: 0;
   }
 }
 .footer__subscribe {

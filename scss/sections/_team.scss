@@ -92,13 +92,30 @@
   &__list2 {
     display: flex;
     justify-content: center;
-    gap: 34px;
+    gap: 10px;
+    margin-top: 16px;
   }
 
   &__contact {
     width: 20px;
     height: 20px;
     fill: $paragraphs-color;
-    margin-top: 28px;
+  }
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      border-radius: 100%;
+      background-color: $logo-colour;
+
+      & > .team__contact {
+        fill: whitesmoke;
+      }
+    }
   }
 }
