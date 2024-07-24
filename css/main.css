@@ -1291,6 +1291,7 @@ button {
   line-height: 20px; /* 125% */
   letter-spacing: 0.48px;
   padding-left: 16px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .footer__input {
@@ -1315,6 +1316,9 @@ button {
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .footer__button {
@@ -1326,6 +1330,7 @@ button {
   width: 24px;
   height: 24px;
   fill: #ffffff;
+  margin-left: 12px;
 }
 .footer__container2 {
   display: flex;
