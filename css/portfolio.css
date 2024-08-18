@@ -14,7 +14,6 @@
 .container {
   padding: 0 10px;
   margin: 0 auto;
-  outline: red solid 1px;
 }
 @media screen and (max-width: 767px) {
   .container {
